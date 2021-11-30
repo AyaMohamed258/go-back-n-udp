@@ -42,7 +42,7 @@ while not done or window:
 		sndpkt.append(h.digest())
 #		send packet
 		BadNet.transmit(clientSocket, pickle.dumps(sndpkt), serverName, serverPort)
-		print "Sent data", nextSeqnum
+		print ("Sent data", nextSeqnum)
 #		increment variable nextSeqnum
 		nextSeqnum = nextSeqnum + 1
 #		check if EOF has reached
