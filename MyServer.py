@@ -14,7 +14,7 @@ serverPort=int(sys.argv[1])
 serverSocket=socket(AF_INET,SOCK_DGRAM)
 serverSocket.bind((serverIP,serverPort))
 serverSocket.settimeout(3)
-print "Ready to serve"
+print ("Ready to serve")
 
 #initializes packet variables 
 expectedseqnum=1
